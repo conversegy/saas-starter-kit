@@ -1,46 +1,47 @@
 [
   {
-    "name": "Create account",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Create Account",
+    "description": "Quickly create your Conversegy account to access a suite of AI tools designed to boost your productivity."
   },
   {
-    "name": "Sign in with Email and Password",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Sign In with Email and Password",
+    "description": "Securely log in using your email address and a strong password for safe access to your dashboard."
   },
   {
-    "name": "Sign in with Magic link",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Sign In with Magic Link",
+    "description": "Easily sign in with a magic link sent directly to your email, eliminating the need for remembering passwords."
   },
   {
-    "name": "Sign in with SAML SSO",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Sign In with SAML SSO",
+    "description": "Integrate seamlessly with your organization's Single Sign-On (SSO) using SAML for streamlined access."
   },
   {
     "name": "Directory Sync (SCIM)",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "description": "Synchronize your user directory with Conversegy using SCIM for efficient user management and provisioning."
   },
   {
-    "name": "Update account",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Update Account",
+    "description": "Manage and update your account settings, preferences, and personal information with ease."
   },
   {
-    "name": "Invite users to the team",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Invite Users to the Team",
+    "description": "Quickly invite team members to join your Conversegy workspace and collaborate on AI-driven projects."
   },
   {
-    "name": "Manage team members",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Manage Team Members",
+    "description": "Control team access and permissions, ensuring the right people have the appropriate access levels."
   },
   {
-    "name": "Update team settings",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Update Team Settings",
+    "description": "Customize and update your team settings to align with your workflow and project requirements."
   },
   {
     "name": "Webhooks & Events",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "description": "Integrate Conversegy with other tools using webhooks and event-driven triggers for enhanced automation."
   },
   {
-    "name": "Create team",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "name": "Create Team",
+    "description": "Set up and manage multiple teams within Conversegy to organize and streamline your projects effectively."
   }
 ]
+

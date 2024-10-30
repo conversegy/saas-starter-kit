@@ -52,73 +52,16 @@ model VerificationToken {
 }
 
 model User {
-  id                     String    @id @default(uuid())
-  name                   String
-  email                  String    @unique
-  emailVerified          DateTime?
-  password               String?
-  image                  String?
-  createdAt              DateTime  @default(now())
-  updatedAt              DateTime  @default(now())
-  invalid_login_attempts Int       @default(0)
-  lockedAt               DateTime?
-
-  teamMembers TeamMember[]
-  accounts    Account[]
-  sessions    Session[]
-  invitations Invitation[]
-}
-
-model Team {
-  id              String       @id @default(uuid())
-  name            String
-  slug            String       @unique
-  domain          String?      @unique
-  defaultRole     Role         @default(MEMBER)
-  billingId       String?
-  billingProvider String?
-  createdAt       DateTime     @default(now())
-  updatedAt       DateTime     @default(now())
-  members         TeamMember[]
-  invitations     Invitation[]
-  apiKeys         ApiKey[]
-
-  @@index([billingId])
-}
-
-model TeamMember {
-  id        String   @id @default(uuid())
-  teamId    String
-  userId    String
-  role      Role     @default(MEMBER)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now())
-
-  team Team @relation(fields: [teamId], references: [id], onDelete: Cascade)
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@unique([teamId, userId])
-  @@index([userId])
-}
-
-model Invitation {
-  id             String   @id @default(uuid())
-  teamId         String
-  email          String?
-  role           Role     @default(MEMBER)
-  token          String   @unique
-  expires        DateTime
-  invitedBy      String
-  createdAt      DateTime @default(now())
-  updatedAt      DateTime @default(now())
-  sentViaEmail   Boolean  @default(true)
-  allowedDomains String[] @default([])
-
-  user User @relation(fields: [invitedBy], references: [id], onDelete: Cascade)
-  team Team @relation(fields: [teamId], references: [id], onDelete: Cascade)
-
-  @@unique([teamId, email])
-  @@index([email])
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  password      String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  accounts      Account[]
+  sessions      Session[]
 }
 
 model PasswordReset {

@@ -1,32 +1,39 @@
 [
   {
-    "amount": "30k",
+    "name": "Starter",
+    "amount": "0",
     "currency": "USD",
     "duration": "month",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "description": "Free plan with essential features to get you started. Credits are deducted each time an app is used within the dashboard.",
     "benefits": [
-      "Up to 20 users.",
-      "Free storage upto 1GB",
-      "Lifetime validity"
+      "100 credits per month",
+      "Access to all AI tools",
+      "Community support"
     ]
   },
   {
-    "amount": "120k",
+    "name": "Pro",
+    "amount": "9",
     "currency": "USD",
     "duration": "month",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "benefits": ["Up to 500 users.", "Storage upto 50GB", "24*7 support"]
+    "description": "$9/month plan with advanced features. Credits are deducted each time an app is used within the dashboard.",
+    "benefits": [
+      "500 credits per month",
+      "Access to all AI tools",
+      "Priority email support"
+    ]
   },
   {
-    "amount": "350k",
+    "name": "Advanced",
+    "amount": "19",
     "currency": "USD",
     "duration": "month",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "description": "$19/month plan with comprehensive features. Credits are deducted each time an app is used within the dashboard.",
     "benefits": [
-      "Up to 1000 users.",
-      "Storage upto 100GB",
-      "24*7 support",
-      "Data backups"
+      "1500 credits per month",
+      "Access to all AI tools",
+      "24/7 premium support"
     ]
   }
 ]
+
