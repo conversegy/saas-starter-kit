@@ -1,28 +1,39 @@
-import { Loading } from '@/components/shared';
-import useTeams from 'hooks/useTeams';
 import { GetServerSidePropsContext } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 import type { NextPageWithLayout } from 'types';
 
 const Dashboard: NextPageWithLayout = () => {
-  const router = useRouter();
-  const { teams, isLoading } = useTeams();
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-2xl font-bold mb-6">Welcome to your AI Dashboard</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        {/* Credits Card */}
+        <div className="bg-white rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-2">Credits Remaining</h2>
+          <div className="text-3xl font-bold text-blue-600">1,234</div>
+          <p className="text-gray-600 text-sm mt-2">Credits available to use</p>
+        </div>
 
-  useEffect(() => {
-    if (isLoading || !teams) {
-      return;
-    }
+        {/* Last Used Card */}
+        <div className="bg-white rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-2">Last Used</h2>
+          <div className="text-xl font-medium">Emoji Generator</div>
+          <p className="text-gray-600 mt-2">"Create a happy Sonic the Hedgehog"</p>
+          <p className="text-gray-500 text-sm mt-2">2 hours ago</p>
+        </div>
 
-    if (teams.length > 0) {
-      router.push(`/teams/${teams[0].slug}/settings`);
-    } else {
-      router.push('teams?newTeam=true');
-    }
-  }, [isLoading, router, teams]);
+        {/* Most Popular Card */}
+        <div className="bg-white rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-2">Most Popular</h2>
+          <div className="text-xl font-medium">Image Generator</div>
+          <p className="text-gray-600 mt-2">Used 47 times this week</p>
+        </div>
+      </div>
 
-  return <Loading />;
+      <p>This is your personal dashboard.</p>
+    </div>
+  );
 };
 
 export async function getStaticProps({ locale }: GetServerSidePropsContext) {

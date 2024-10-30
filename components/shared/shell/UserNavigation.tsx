@@ -7,16 +7,11 @@ import { useTranslation } from 'next-i18next';
 import NavigationItems from './NavigationItems';
 import { MenuItem, NavigationProps } from './NavigationItems';
 
+
 const UserNavigation = ({ activePathname }: NavigationProps) => {
   const { t } = useTranslation('common');
 
   const menus: MenuItem[] = [
-    {
-      name: t('all-teams'),
-      href: '/teams',
-      icon: RectangleStackIcon,
-      active: activePathname === '/teams',
-    },
     {
       name: t('account'),
       href: '/settings/account',
